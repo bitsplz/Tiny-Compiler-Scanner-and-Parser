@@ -1,0 +1,13 @@
+statements -> statement
+statements -> statement statements
+statement -> assignStmt
+statement -> ifStmt
+statement -> whileStmt
+assignStmt -> id = expr
+ifStmt -> if ( cmpr ) statement
+whileStmt -> while ( cmpr ) statement
+expr -> id
+expr -> int
+expr -> term OP expr
+cmpr -> term == expr
+term -> id
